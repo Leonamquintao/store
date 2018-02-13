@@ -1,25 +1,33 @@
 <html>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP</title>
-  </head>
+  <?php include("src/header.php") ?>
 
   <body>
-    <?php
+    <div class="container">
+
+      <div class="principal">
+
+        <h1>Bem vindo</h1>
+
+      </div>
+
+      <?php
 
       //cookie de seção que dura uma hora.
-      setcookie('nome', 'Jorge', time()+3600);
+      //setcookie('nome', 'Jorge', time()+3600);
 
-      $enterPharse = 'Hello '.$_COOKIE['nome'].' !!!<br /><br />';
-      echo $enterPharse;
+      //$enterPharse = 'Hello '.$_COOKIE['nome'].' !!!<br /><br />';
+      //echo $enterPharse;
 
-      for ($i=1; $i <= 20; $i++) {
-        echo $i % 2 == 0 ? $i . ' Par <br />' : $i . ' Impar <br />';
-      }
+      //for ($i=1; $i <= 20; $i++) {
+      //  echo $i % 2 == 0 ? $i . ' Par <br />' : $i . ' Impar <br />';
+      // }
 
-    ?>
+      //echo $_GET['name'];
 
+      ?>
+
+    </div>
   </body>
+
 </html>
